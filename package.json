@@ -42,14 +42,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bsdaoquang/react-native-components.git"
+    "url": "git+https://github.com/bsdaoquang/components.git"
   },
   "author": "bsdaoquang <bsdaoquang@gmail.com> (https://github.com/bsdaoquang)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bsdaoquang/react-native-components/issues"
+    "url": "https://github.com/bsdaoquang/components/issues"
   },
-  "homepage": "https://github.com/bsdaoquang/react-native-components#readme",
+  "homepage": "https://rncomponent.com",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
