@@ -21,11 +21,11 @@
 
 ### React Native
 
-        `#npm
-      npm install @bsdaoquang/rncomponent react-native-svg
+#npm
+npm install @bsdaoquang/rncomponent react-native-svg
 
-        #yarn
-        yarn add @bsdaoquang/rncomponent react-native-svg`
+#yarn
+yarn add @bsdaoquang/rncomponent react-native-svg
 
 **iOS**
 cd ios
@@ -33,8 +33,8 @@ pod install
 
 ### Expo
 
-      #npm
-      npx expo install @bsdaoquang/rncomponent react-native-svg
+#npm
+npx expo install @bsdaoquang/rncomponent react-native-svg
 
 ## Usage
 
@@ -58,3 +58,4 @@ pod install
 - [Home page](https://rncomponent.com)
 - [Card](https://rncomponent.com/components/card)
 - [Text](https://rncomponent.com/components/text)
+- [Button](https://rncomponent.com/components/button)

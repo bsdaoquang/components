@@ -1,6 +1,6 @@
 {
   "name": "@bsdaoquang/rncomponent",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "UI library for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

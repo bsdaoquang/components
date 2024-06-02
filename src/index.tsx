@@ -11,6 +11,7 @@ import { numberToString } from './utils/numberToString';
 import { replaceHtmlTags } from './utils/replaceHtmlTags';
 import { replaceName } from './utils/replaceName';
 import Text from './components/Text';
+import Button from './components/Button';
 
 export {
   CheckboxItem,
@@ -26,4 +27,5 @@ export {
   Section,
   Card,
   Text,
+  Button,
 };
