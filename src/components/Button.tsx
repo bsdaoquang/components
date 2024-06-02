@@ -6,7 +6,6 @@ import {
   type TextStyle,
   type ViewStyle,
 } from 'react-native';
-import { colors } from '../colors/colors';
 import { globalStyles } from '../styles/globalStyles';
 import Text from './Text';
 
@@ -54,22 +53,22 @@ const Button = (props: Props) => {
           paddingVertical: size === 'large' ? 14 : size === 'small' ? 6 : 12,
           paddingHorizontal: size === 'large' ? 30 : size === 'small' ? 12 : 20,
           backgroundColor: outline
-            ? colors.white
+            ? 'white'
             : color
               ? color
               : type === 'primary'
-                ? colors.blue400
-                : colors.white,
+                ? '#0d6efd'
+                : 'white',
           borderWidth: 1,
           borderColor: outline
             ? color
               ? color
-              : colors.blue400
+              : '#0d6efd'
             : type === 'primary'
-              ? colors.blue400
+              ? '#0d6efd'
               : color
                 ? color
-                : colors.gray400,
+                : '#e0e0e0',
           borderStyle: type === 'dashed' ? 'dashed' : 'solid',
           borderRadius: 100,
           minHeight: size === 'small' ? 38 : 42,
@@ -114,16 +113,16 @@ const Button = (props: Props) => {
               outline
                 ? color
                   ? color
-                  : colors.blue400
+                  : '#0d6efd'
                 : type === 'primary'
-                  ? colors.white
+                  ? 'white'
                   : !type || type === 'text' || type === 'link'
                     ? type === 'link'
-                      ? colors.blue500
+                      ? '#0d6efd'
                       : color && color !== '#ffffff' && color !== 'white'
-                        ? colors.white
-                        : colors.black
-                    : colors.black
+                        ? 'white'
+                        : '#212121'
+                    : '#212121'
             }
             styles={[{}, textStyleProps]}
           />
