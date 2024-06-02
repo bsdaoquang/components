@@ -28,20 +28,17 @@
         yarn add @bsdaoquang/rncomponent react-native-svg`
 
 **iOS**
-
-      `
-      cd ios
-      pod install
-      `
+cd ios
+pod install
 
 ### Expo
 
-      `#npm
-      npx expo install @bsdaoquang/rncomponent react-native-svg`
+      #npm
+      npx expo install @bsdaoquang/rncomponent react-native-svg
 
 ## Usage
 
-      `import { View, Text } from 'react-native';
+      import { View, Text } from 'react-native';
       import React from 'react';
       import {Card} from '@bsdaoquang/rncomponent';
       const App = () => {
@@ -55,9 +52,10 @@
             );
             };
 
-      export default App;`
+      export default App;
 
 ## Links
 
 - [Home page](https://rncomponent.com)
 - [Card](https://rncomponent.com/components/card)
+- [Text] (https://rncomponent.com/components/text)
