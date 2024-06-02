@@ -1,31 +1,13 @@
-# react-native-components
+# @bsdaoquang/rncomponent
 
-UI library for react native
-
-## Installation
-
-```sh
-npm install react-native-components
-```
-
-## Usage
-
-```js
-import { multiply } from 'react-native-components';
-
-// ...
-
-const result = await multiply(3, 7);
-```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
+### React Native UI Components Library
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
+### ✨ Features
+
+- Library UI component designed for React Native & Expo applications.
+- A set of high-quality React Native components out of the box
+- Written in TypeScript with predictable static types.
+- Whole package of design resources and development tools.
+- Powerful theme customization based on StyleSheet.
