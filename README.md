@@ -21,21 +21,43 @@
 
 ### React Native
 
-        `#npm  npm install @bsdaoquang/rncomponent react-native-svg  #yarn  yarn add @bsdaoquang/rncomponent react-native-svg`
+        `#npm
+      npm install @bsdaoquang/rncomponent react-native-svg
+
+        #yarn
+        yarn add @bsdaoquang/rncomponent react-native-svg`
 
 **iOS**
 
-      `cd ios  pod install`
+      `
+      cd ios
+      pod install
+      `
 
 ### Expo
 
-      `#npm  npx expo install @bsdaoquang/rncomponent react-native-svg`
+      `#npm
+      npx expo install @bsdaoquang/rncomponent react-native-svg`
 
 ## Usage
 
-      `import { View, Text } from 'react-native'; import React from 'react'; import {Card} from '@bsdaoquang/rncomponent';  const App = () => {   return (     App               ); };  export default App;`
+      `import { View, Text } from 'react-native';
+      import React from 'react';
+      import {Card} from '@bsdaoquang/rncomponent';
+      const App = () => {
+            return (
+                  <View>
+                        <Card>
+
+                              <Text>Hello world</Text>
+                        </Card>
+                  </View>
+            );
+            };
+
+      export default App;`
 
 ## Links
 
-- [Home page](https://rncomponent)
-- [Card](https://rncomponent/components/card)
+- [Home page](https://rncomponent.com)
+- [Card](https://rncomponent.com/components/card)
