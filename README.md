@@ -58,4 +58,4 @@ pod install
 
 - [Home page](https://rncomponent.com)
 - [Card](https://rncomponent.com/components/card)
-- [Text] (https://rncomponent.com/components/text)
+- [Text](https://rncomponent.com/components/text)

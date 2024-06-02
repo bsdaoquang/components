@@ -1,6 +1,6 @@
 {
   "name": "@bsdaoquang/rncomponent",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "UI library for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -38,7 +38,13 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "ui",
+    "react native ui",
+    "React native UI components",
+    "react native components",
+    "react native ui library",
+    "react native components library"
   ],
   "repository": {
     "type": "git",

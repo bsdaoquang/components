@@ -10,6 +10,7 @@ import { DateTime } from './utils/DateTime';
 import { numberToString } from './utils/numberToString';
 import { replaceHtmlTags } from './utils/replaceHtmlTags';
 import { replaceName } from './utils/replaceName';
+import Text from './components/Text';
 
 export {
   CheckboxItem,
@@ -24,4 +25,5 @@ export {
   numberToString,
   Section,
   Card,
+  Text,
 };
