@@ -1,29 +1,27 @@
-import { NativeModules, Platform } from 'react-native';
+import Badge from './components/Badge';
+import Card from './components/Card';
+import CheckboxItem from './components/CheckboxItem';
+import CheckboxTree from './components/CheckboxTree';
+import Label from './components/Label';
+import Row from './components/Row';
+import Section from './components/Section';
+import Space from './components/Space';
+import { DateTime } from './utils/DateTime';
+import { numberToString } from './utils/numberToString';
+import { replaceHtmlTags } from './utils/replaceHtmlTags';
+import { replaceName } from './utils/replaceName';
 
-const LINKING_ERROR =
-  `The package 'react-native-components' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
-  '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo Go\n';
-
-// @ts-expect-error
-const isTurboModuleEnabled = global.__turboModuleProxy != null;
-
-const ComponentsModule = isTurboModuleEnabled
-  ? require('./NativeComponents').default
-  : NativeModules.Components;
-
-const Components = ComponentsModule
-  ? ComponentsModule
-  : new Proxy(
-      {},
-      {
-        get() {
-          throw new Error(LINKING_ERROR);
-        },
-      }
-    );
-
-export function multiply(a: number, b: number): Promise<number> {
-  return Components.multiply(a, b);
-}
+export {
+  CheckboxItem,
+  CheckboxTree,
+  Label,
+  Row,
+  Space,
+  Badge,
+  DateTime,
+  replaceHtmlTags,
+  replaceName,
+  numberToString,
+  Section,
+  Card,
+};

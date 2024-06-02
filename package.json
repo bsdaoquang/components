@@ -1,6 +1,6 @@
 {
-  "name": "react-native-components",
-  "version": "0.1.0",
+  "name": "@bsdaoquang/rncomponent",
+  "version": "0.0.1",
   "description": "UI library for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -26,13 +26,14 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-components-example",
+    "example": "yarn workspace rncomponents-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "start": "npx react-native start"
   },
   "keywords": [
     "react-native",
@@ -161,5 +162,10 @@
     "name": "RNComponentsSpec",
     "type": "modules",
     "jsSrcsDir": "src"
+  },
+  "dependencies": {
+    "@react-native-community/checkbox": "^0.5.17",
+    "iconsax-react-native": "^0.0.8",
+    "react-native-svg": "^15.3.0"
   }
 }
