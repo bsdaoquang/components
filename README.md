@@ -21,20 +21,26 @@
 
 ### React Native
 
+`
 #npm
 npm install @bsdaoquang/rncomponent
 
 #yarn
 yarn add @bsdaoquang/rncomponent
+`
 
 **iOS**
+
+`
 cd ios
+
 pod install
+`
 
 ### Expo
 
-#npm
-npx expo install @bsdaoquang/rncomponent
+`#npm
+npx expo install @bsdaoquang/rncomponent`
 
 ## Usage
 
