@@ -1,10 +1,14 @@
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import React from 'react';
+import Card from '../../src/components/Card';
+import Text from '../../src/components/Text';
 
 const App = () => {
   return (
     <View>
-      <Text>App</Text>
+      <Card>
+        <Text text="Hello world!!!" size={32} />
+      </Card>
     </View>
   );
 };
