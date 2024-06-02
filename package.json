@@ -170,8 +170,6 @@
     "jsSrcsDir": "src"
   },
   "dependencies": {
-    "@react-native-community/checkbox": "^0.5.17",
-    "iconsax-react-native": "^0.0.8",
-    "react-native-svg": "^15.3.0"
+    "@react-native-community/checkbox": "^0.5.17"
   }
 }

@@ -58,6 +58,7 @@ interface Props {
   textTransform?: 'none' | 'capitalize' | 'uppercase' | 'lowercase' | undefined;
   userSelect?: 'auto' | 'none' | 'text' | 'contain' | 'all' | undefined;
   letterSpacing?: number | undefined;
+  flex?: number;
 }
 
 const Text = (props: Props) => {
@@ -71,6 +72,7 @@ const Text = (props: Props) => {
     numberOfLine,
     styles,
     textAlign,
+    flex,
     transform,
     letterSpacing,
     textDecorationColor,
@@ -104,6 +106,7 @@ const Text = (props: Props) => {
             textShadowRadius,
             textShadowColor,
             userSelect,
+            flex: flex ?? 0,
           },
           styles,
         ]}

@@ -1,5 +1,4 @@
 import CheckBox from '@react-native-community/checkbox';
-import { ArrowDown2, ArrowRight2 } from 'iconsax-react-native';
 import React, { useState, type ReactNode } from 'react';
 import {
   Text,
@@ -127,12 +126,12 @@ const CheckboxItem = (props: Props) => {
               expandedIcon ? (
                 expandedIcon
               ) : (
-                <ArrowDown2 size={16} color="#212121" />
+                <></>
               )
             ) : unExpandedIcon ? (
               unExpandedIcon
             ) : (
-              <ArrowRight2 size={16} color="#212121" />
+              <></>
             )}
           </TouchableOpacity>
         ) : (

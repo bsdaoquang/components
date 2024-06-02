@@ -45,12 +45,11 @@ pod install
             return (
                   <View>
                         <Card>
-
                               <Text>Hello world</Text>
                         </Card>
                   </View>
             );
-            };
+      };
 
       export default App;
 
