@@ -170,6 +170,7 @@
     "jsSrcsDir": "src"
   },
   "dependencies": {
-    "@react-native-community/checkbox": "^0.5.17"
+    "@react-native-community/checkbox": "^0.5.17",
+    "react-native-vector-icons": "^10.1.0"
   }
 }

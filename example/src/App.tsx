@@ -6,9 +6,16 @@ import Text from '../../src/components/Text';
 
 const App = () => {
   return (
-    <View style={{ flex: 1, paddingVertical: 20 }}>
+    <View
+      style={{
+        flex: 1,
+        justifyContent: 'center',
+      }}
+    >
       <Section>
         <Button
+          disable
+          size="large"
           title="Button Default"
           iconPosition="right"
           onPress={() => console.log('dada')}
