@@ -2,7 +2,7 @@ import React from 'react';
 import { View } from 'react-native';
 import Button from '../../src/components/Button';
 import Section from '../../src/components/Section';
-import Text from '../../src/components/Text';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 
 const App = () => {
   return (
@@ -21,7 +21,7 @@ const App = () => {
           onPress={() => console.log('dada')}
         />
         <Button
-          icon={<Text text="a" />}
+          icon={<AntDesign name="home" size={20} color={'coral'} />}
           iconExtra
           title="Button Default"
           onPress={() => console.log('dada')}
