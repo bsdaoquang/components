@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { colors } from '../colors/colors';
 
 export const globalStyles = StyleSheet.create({
   container: {
@@ -25,15 +26,14 @@ export const globalStyles = StyleSheet.create({
   },
 
   inputContainer: {
-    paddingVertical: 8,
     paddingHorizontal: 12,
-    borderRadius: 4,
+    paddingVertical: 8,
+    borderRadius: 100,
     borderWidth: 1,
     minHeight: 48,
-    // borderColor: colors.gray70,
+    borderColor: colors.gray200,
     justifyContent: 'center',
     alignItems: 'center',
-    // marginBottom: 12,
   },
 
   shadow: {
@@ -47,14 +47,13 @@ export const globalStyles = StyleSheet.create({
     elevation: 8,
   },
 
-  // input: {
-  //   padding: 0,
-  //   margin: 0,
-  //   color: colors.dark20,
-  //   fontFamily: fontFamilies.regular,
-  //   fontSize: appInfo.size.text,
-  //   flex: 1,
-  // },
+  input: {
+    padding: 0,
+    margin: 0,
+    color: '#0F1414',
+    fontSize: 14,
+    flex: 1,
+  },
   button: {
     borderRadius: 4,
     paddingHorizontal: 12,

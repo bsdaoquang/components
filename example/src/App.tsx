@@ -1,33 +1,44 @@
-import React from 'react';
-import { View } from 'react-native';
-import Button from '../../src/components/Button';
+import React, { useState } from 'react';
+import { ScrollView } from 'react-native';
 import Section from '../../src/components/Section';
-import AntDesign from 'react-native-vector-icons/AntDesign';
+import Input from '../../src/components/Input';
 
 const App = () => {
+  const [email, setEmail] = useState('');
+
+  console.log(email);
+
   return (
-    <View
+    <ScrollView
       style={{
         flex: 1,
-        justifyContent: 'center',
+        paddingVertical: 50,
       }}
     >
       <Section>
-        <Button
-          disable
-          size="large"
-          title="Button Default"
-          iconPosition="right"
-          onPress={() => console.log('dada')}
+        <Input
+          required
+          label="Email"
+          placeholder="Email"
+          value={email}
+          helpText="fagag"
+          textAreal
+          rows={3}
+          radius={12}
+          max={100}
+          showCount
+          clear
+          onChange={(val) => setEmail(val)}
         />
-        <Button
-          icon={<AntDesign name="home" size={20} color={'coral'} />}
-          iconExtra
-          title="Button Default"
-          onPress={() => console.log('dada')}
+        <Input
+          label="Email"
+          placeholder="Email"
+          value={email}
+          clear
+          onChange={(val) => setEmail(val)}
         />
       </Section>
-    </View>
+    </ScrollView>
   );
 };
 

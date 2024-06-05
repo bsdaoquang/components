@@ -1,6 +1,7 @@
 export const colors = {
   black: '#000',
   white: '#fff',
+  gray: '#9F9E9A',
   blue100: '#cfe2ff',
   blue200: '#9ec5fe',
   blue300: '#6ea8fe',
@@ -26,6 +27,6 @@ export const colors = {
   red500: '#dc3545',
   red600: '#b02a37',
   red700: '#842029',
-  red800: '',
-  red900: '',
+  danger: '#e74c3c',
+  primary: '#3498db',
 };
