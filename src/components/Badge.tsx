@@ -2,6 +2,7 @@ import React, { type ReactNode } from 'react';
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 import { colors } from '../colors/colors';
 import Label from './Label';
+import Row from './Row';
 
 type Props = {
   children: ReactNode;
@@ -69,19 +70,21 @@ const Badge = (props: Props) => {
   );
 
   return (
-    <View>
-      {children}
+    <Row>
+      <View>
+        {children}
 
-      {count ? (
-        count > 0 ? (
-          renderCount
-        ) : null
-      ) : show === false || count === 0 ? (
-        <></>
-      ) : (
-        dotProps
-      )}
-    </View>
+        {count ? (
+          count > 0 ? (
+            renderCount
+          ) : null
+        ) : show === false || count === 0 ? (
+          <></>
+        ) : (
+          dotProps
+        )}
+      </View>
+    </Row>
   );
 };
 
