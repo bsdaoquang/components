@@ -23,24 +23,20 @@
 
 `
 #npm
-npm install @bsdaoquang/rncomponent
+npm install @bsdaoquang/rncomponent react-native-vector-icons
 
 #yarn
-yarn add @bsdaoquang/rncomponent
-`
+yarn add @bsdaoquang/rncomponent react-native-vector-icons`
 
 **iOS**
-
 `
 cd ios
-
-pod install
-`
+pod install`
 
 ### Expo
 
 `#npm
-npx expo install @bsdaoquang/rncomponent`
+npx expo install @bsdaoquang/rncomponent react-native-vector-icons`
 
 ## Usage
 
@@ -62,6 +58,8 @@ npx expo install @bsdaoquang/rncomponent`
 ## Links
 
 - [Home page](https://rncomponent.com)
-- [Card](https://rncomponent.com/components/card)
-- [Text](https://rncomponent.com/components/text)
-- [Button](https://rncomponent.com/components/button)
+- [Card](https://rncomponent.com/components/card?id=665b5a73e96bb48bda7a00fd)
+- [Text](https://rncomponent.com/components/text?id=665c959707bf0c77c4b0a254)
+- [Button](https://rncomponent.com/components/button?id=665d47d0924dfb301c601776)
+- [Input](https://rncomponent.com/components/input?id=6662cbdd0ce3ab39a212fd2a)
+- [Badge](https://rncomponent.com/components/badge?id=6662cfba811f34a7fc2ef829)

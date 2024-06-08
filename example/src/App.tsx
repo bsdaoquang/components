@@ -1,45 +1,40 @@
-import React, { useState } from 'react';
-import { ScrollView } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import React from 'react';
 import Section from '../../src/components/Section';
-import Input from '../../src/components/Input';
+import { globalStyles } from '../../src/styles/globalStyles';
+import Badge from '../../src/components/Badge';
+import Row from '../../src/components/Row';
 
 const App = () => {
-  const [email, setEmail] = useState('');
-
-  console.log(email);
-
   return (
-    <ScrollView
-      style={{
-        flex: 1,
-        paddingVertical: 50,
-      }}
-    >
-      <Section>
-        <Input
-          required
-          label="Email"
-          placeholder="Email"
-          value={email}
-          helpText="fagag"
-          textAreal
-          rows={3}
-          radius={12}
-          max={100}
-          showCount
-          clear
-          onChange={(val) => setEmail(val)}
-        />
-        <Input
-          label="Email"
-          placeholder="Email"
-          value={email}
-          clear
-          onChange={(val) => setEmail(val)}
-        />
+    <View style={{ flex: 1, backgroundColor: 'white' }}>
+      <Section styles={[globalStyles.container, { justifyContent: 'center' }]}>
+        <Row justifyContent="space-around">
+          <Badge>
+            <View style={styles.avatar} />
+          </Badge>
+          <Badge count={12}>
+            <View style={styles.avatar} />
+          </Badge>
+          <Badge count={112} overflowCount={100}>
+            <View style={styles.avatar} />
+          </Badge>
+          <Badge dotColor="green">
+            <View style={styles.avatar} />
+          </Badge>
+        </Row>
       </Section>
-    </ScrollView>
+    </View>
   );
 };
 
 export default App;
+
+const styles = StyleSheet.create({
+  avatar: {
+    width: 50,
+    height: 50,
+    borderRadius: 12,
+    backgroundColor: 'coral',
+  },
+});
