@@ -8,6 +8,7 @@ import {
   Row,
   Section,
   Space,
+  Divider,
 } from './components';
 import CheckboxItem from './components/CheckboxItem';
 import CheckboxTree from './components/CheckboxTree';
@@ -34,4 +35,5 @@ export {
   Button,
   Input,
   Loading,
+  Divider,
 };
