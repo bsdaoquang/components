@@ -114,14 +114,16 @@ const Button = (props: Props) => {
             <View
               style={{
                 flex: iconExtra ? 1 : 0,
-                marginLeft:
-                  icon &&
-                  (!iconPosition || iconPosition === 'left') &&
-                  !iconExtra
+                marginLeft: icon
+                  ? (!iconPosition || iconPosition === 'left') && !iconExtra
                     ? 12
-                    : 0,
-                marginRight:
-                  icon && iconPosition === 'right' && !iconExtra ? 12 : 0,
+                    : -24
+                  : 0,
+                marginRight: icon
+                  ? iconPosition === 'right' && !iconExtra
+                    ? 12
+                    : -24
+                  : 0,
               }}
             >
               <Text
@@ -130,7 +132,11 @@ const Button = (props: Props) => {
                 text={title}
                 size={size === 'small' ? 12 : 14}
                 weight={
-                  !type || type === 'text' || type === 'link' ? '400' : '600'
+                  !type
+                    ? '600'
+                    : type === 'text' || type === 'link'
+                      ? '400'
+                      : '600'
                 }
                 color={
                   disable
