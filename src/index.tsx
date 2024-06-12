@@ -13,6 +13,7 @@ import {
 import CheckboxItem from './components/CheckboxItem';
 import CheckboxTree from './components/CheckboxTree';
 import Label from './components/Label';
+import type { TextProps } from './components/Text';
 import { DateTime } from './utils/DateTime';
 import { numberToString } from './utils/numberToString';
 import { replaceHtmlTags } from './utils/replaceHtmlTags';
@@ -37,3 +38,5 @@ export {
   Loading,
   Divider,
 };
+
+export type { TextProps };

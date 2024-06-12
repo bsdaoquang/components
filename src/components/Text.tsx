@@ -2,7 +2,7 @@ import * as ReactNative from 'react-native';
 import React from 'react';
 import { type StyleProp, type TextStyle } from 'react-native';
 
-interface Props {
+export interface TextProps {
   text: string;
   color?: string;
   size?: number;
@@ -61,7 +61,7 @@ interface Props {
   flex?: number;
 }
 
-const Text = (props: Props) => {
+const Text = (props: TextProps) => {
   const {
     text,
     color,
