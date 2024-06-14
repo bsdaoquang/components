@@ -27,6 +27,10 @@ export const colors = {
   red500: '#dc3545',
   red600: '#b02a37',
   red700: '#842029',
-  danger: '#e74c3c',
   primary: '#3498db',
+  warning: '#FFC700',
+  danger: '#EE4E4E',
+  text: '#0C0C0C',
+  light: '#EEEEEE',
+  success: '#059212',
 };

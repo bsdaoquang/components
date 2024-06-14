@@ -9,11 +9,15 @@ import {
   Section,
   Space,
   Divider,
+  Col,
+  Dropdown,
 } from './components';
 import CheckboxItem from './components/CheckboxItem';
 import CheckboxTree from './components/CheckboxTree';
+import type { DropdownProps } from './components/Dropdown';
 import Label from './components/Label';
 import type { TextProps } from './components/Text';
+import type { MenuItem } from './models/MenuProps';
 import { DateTime } from './utils/DateTime';
 import { numberToString } from './utils/numberToString';
 import { replaceHtmlTags } from './utils/replaceHtmlTags';
@@ -37,6 +41,8 @@ export {
   Input,
   Loading,
   Divider,
+  Col,
+  Dropdown,
 };
 
-export type { TextProps };
+export type { TextProps, MenuItem, DropdownProps };

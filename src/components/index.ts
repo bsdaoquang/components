@@ -1,7 +1,9 @@
 import Badge from './Badge';
 import Button from './Button';
 import Card from './Card';
+import Col from './Col';
 import Divider from './Divider';
+import Dropdown from './Dropdown';
 import Input from './Input';
 import Loading from './Loading';
 import Row from './Row';
@@ -20,4 +22,6 @@ export {
   Section,
   Space,
   Divider,
+  Dropdown,
+  Col,
 };

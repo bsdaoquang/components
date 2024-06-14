@@ -57,13 +57,13 @@ const Button = (props: Props) => {
     loading || disable
       ? {
           backgroundColor: '#e0e0e0',
-          paddingVertical: size === 'large' ? 16 : size === 'small' ? 8 : 14,
+          paddingVertical: size === 'large' ? 12 : size === 'small' ? 6 : 8,
           borderRadius: radius ?? 100,
         }
       : type === 'text' || type === 'link'
         ? {}
         : {
-            paddingVertical: size === 'large' ? 16 : size === 'small' ? 8 : 14,
+            paddingVertical: size === 'large' ? 12 : size === 'small' ? 6 : 8,
             paddingHorizontal:
               size === 'large' ? 30 : size === 'small' ? 12 : 20,
             backgroundColor: outline
@@ -85,7 +85,7 @@ const Button = (props: Props) => {
                   : '#e0e0e0',
             borderStyle: type === 'dashed' ? 'dashed' : 'solid',
             borderRadius: radius ?? 100,
-            minHeight: size === 'small' ? 38 : 48,
+            minHeight: size === 'small' ? 38 : 42,
           };
 
   return (
@@ -94,13 +94,13 @@ const Button = (props: Props) => {
       activeOpacity={0.6}
       onLongPress={onLongPress}
       style={[
-        localstyles,
         globalStyles.row,
         globalStyles.center,
         isShadow !== false ? globalStyles.shadow : undefined,
         {
           marginBottom: inline ? 0 : 16,
         },
+        localstyles,
         styles,
       ]}
       onPress={onPress}
@@ -114,12 +114,12 @@ const Button = (props: Props) => {
             <View
               style={{
                 flex: iconExtra ? 1 : 0,
-                marginLeft: icon
+                paddingLeft: icon
                   ? (!iconPosition || iconPosition === 'left') && !iconExtra
                     ? 12
                     : -24
                   : 0,
-                marginRight: icon
+                paddingRight: icon
                   ? iconPosition === 'right' && !iconExtra
                     ? 12
                     : -24
