@@ -90,14 +90,6 @@ const Dropdown = (props: DropdownProps) => {
           setButtonHeight(event.nativeEvent.layout.height);
         }}
         disabled={disable}
-        style={
-          disable && {
-            backgroundColor: colors.gray200,
-            padding: 4,
-            paddingHorizontal: 16,
-            borderRadius: 10,
-          }
-        }
         activeOpacity={0.6}
         onPress={() => setIsVisible(!isVisible)}
       >
