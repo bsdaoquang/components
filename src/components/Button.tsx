@@ -57,13 +57,13 @@ const Button = (props: Props) => {
     loading || disable
       ? {
           backgroundColor: '#e0e0e0',
-          paddingVertical: size === 'large' ? 12 : size === 'small' ? 6 : 8,
+          paddingVertical: size === 'large' ? 14 : size === 'small' ? 6 : 12,
           borderRadius: radius ?? 100,
         }
       : type === 'text' || type === 'link'
         ? {}
         : {
-            paddingVertical: size === 'large' ? 12 : size === 'small' ? 6 : 8,
+            paddingVertical: size === 'large' ? 14 : size === 'small' ? 6 : 12,
             paddingHorizontal:
               size === 'large' ? 30 : size === 'small' ? 12 : 20,
             backgroundColor: outline
@@ -130,7 +130,7 @@ const Button = (props: Props) => {
                 numberOfLine={textLine ?? 1}
                 textAlign="center"
                 text={title}
-                size={size === 'small' ? 12 : 14}
+                size={size === 'small' ? 12 : 16}
                 weight={
                   !type
                     ? '600'

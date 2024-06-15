@@ -22,6 +22,7 @@ import { DateTime } from './utils/DateTime';
 import { numberToString } from './utils/numberToString';
 import { replaceHtmlTags } from './utils/replaceHtmlTags';
 import { replaceName } from './utils/replaceName';
+import { Validator } from './utils/validators';
 
 export {
   CheckboxItem,
@@ -31,6 +32,7 @@ export {
   Space,
   Badge,
   DateTime,
+  Validator,
   replaceHtmlTags,
   replaceName,
   numberToString,
